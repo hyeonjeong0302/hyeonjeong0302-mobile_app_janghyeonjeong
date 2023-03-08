@@ -1,0 +1,441 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: purple;
+}
+
+body {
+  margin: 0 auto;
+  color: purple;
+  cursor: pointer;
+}
+
+/* header */
+.header {
+  height: 100px;
+  background-color: white;
+  position: relative;
+}
+
+.header h1 {
+  color: purple;
+  text-align: center;
+  line-height: 100px;
+}
+
+/* lnb_menu */
+#lnb_chk {
+  display: none;
+}
+
+#lnb_chk:checked~.lnb_ham_menu {
+  display: none;
+}
+
+#lnb_chk~.lnb_ham_menu {
+  display: block;
+}
+
+.label {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.label label {
+  color: purple;
+}
+
+.label label i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.lnb_ham_menu {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  z-index: 55;
+}
+
+.lnb_ham_menu li {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: purple;border-bottom: 2px solid plum;box-sizing: border-box;
+  opacity: 0.7;
+}.lnb_ham_menu li:last-child{
+  border-bottom: none;
+}
+
+.lnb_ham_menu a li {
+  color: white;
+}
+
+.lnb_menu {
+  display: none;
+}
+
+/* wrap */
+.visual_main {
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.visual_main img {
+  width: 100%;
+  opacity: 0.8;
+}
+
+/* notice */
+.notice_box {}
+
+.notice_box .notice {}
+
+.notice_box h1 {
+  padding: 10px 0 5px 10px;
+  color: black;
+}
+
+.notice_box .notice {
+  margin-bottom: 50px;
+}
+
+.notice_box .notice div {
+  border-bottom: 1px dashed purple;
+  box-sizing: border-box;
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+.notice_box .notice div p {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.notice_box .notice div span {
+  padding-right: 10px;
+  font-size: 14px;
+  border-right: 1px solid lightgray;
+  color: black;
+}
+
+.notice_box .notice div span.writter {
+  color: purple;
+}
+
+.notice_box .notice div span.team {}
+
+.notice_box .notice div span.date {
+  border-right: none;
+}
+
+/* notice_link */
+
+.notice_link {
+  color: black;
+}
+
+.notice_link h1 {
+  margin: 10px 0 10px 20px;
+  padding-bottom: 10px;
+
+}
+
+.notice_link .notice_link_box {
+  padding: 10px;
+}
+
+.notice_link .notice_link_box>div {}
+
+.notice_link .notice_link_box div p {
+  margin: 10px 0 20px 10px;
+  padding: 0 10px 20px 10px;
+  border-bottom: 1px solid purple;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.notice_link .notice_link_box div div {
+  margin: 10px 10px 20px 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid purple;
+}
+
+.notice_link .notice_link_box div div span {
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.notice_link .notice_link_box div div span.writter_l,
+.notice_link .notice_link_box div div span.team_l,
+.notice_link .notice_link_box div div span.date_l {
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+}
+
+.notice_link .notice_link_box div div span.writter_r,
+.notice_link .notice_link_box div div span.team_r,
+.notice_link .notice_link_box div div span.date_r {
+  height: 20px;
+  display: inline-block;
+}
+
+.notice_link .notice_link_box .text {
+  padding: 0 10px 20px 10px;
+}
+
+.notice_link .notice_link_box .go_list {
+  padding: 0 10px 20px 10px;
+  border-bottom: none;
+  width: 50px;
+  height: 20px;
+  background-color: purple;
+  border-radius: 5px;
+}
+
+.notice_link .notice_link_box .go_list a {
+  display: block;
+  font-weight: bold;
+  color: white;
+  line-height: 35px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.profile {
+  margin-bottom: 50px;
+}
+
+.profile h1 {
+  padding: 10px 0 5px 10px;
+  color: black;
+}
+
+.profile img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.profile h2 {
+  padding: 20px 0 20px 10px;
+}
+
+.profile .birth {
+  margin: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed purple;
+}
+
+.profile .birth b {
+  display: block;
+  font-size: 18px;
+  line-height: 50px;
+}
+
+.profile .birth a {
+  display: block;
+  font-size: 10px;
+  width: 100px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: purple;
+  color: white;
+  margin: 10px;
+}
+
+.profile .award div {
+  margin: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed purple;
+}
+
+.profile .award div b {
+  display: block;
+  font-size: 18px;
+  line-height: 50px;
+}
+
+.profile .album {
+  margin-bottom: 50px;
+}
+
+.profile .album div {
+  margin: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed purple;
+}
+
+.profile .album div b {
+  display: block;
+  font-size: 18px;
+  line-height: 50px;
+}
+
+.profile .album div p {
+  margin-bottom: 10px;
+}
+
+.gallery_box {
+  margin-bottom: 50px;
+}
+
+.gallery_box h1 {
+  color: black;
+  margin: 20px 10px;
+}
+
+.gallery_box .gallery {}
+
+.gallery_box .gallery>div {}
+
+.gallery_box .gallery>div img {
+  width: 25%;
+  height: 100px;
+  overflow: hidden;
+  float: left;
+}
+
+.gallery_box .gallery>div img:hover {
+  width: 100%;
+  height: 100%;
+}
+
+/* footer */
+
+.footer_outer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer {
+  height: 50px;
+  background-color: purple;
+  overflow: hidden;
+  color: white;
+}
+
+.footer .sns {}
+
+.footer .sns span {
+  padding: 10px;
+  line-height: 50px;
+}
+
+.footer .sns a {
+  line-height: 50px;
+}
+
+.footer .sns a i {
+  /* font-size: 30px; */
+  color: white;
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  color: purple;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+}
+
+/*****************media_query*******************/
+@media all and (min-width: 915px) and (orientation: landscape) {
+  .header .label {
+    display: none;
+  }
+
+  .lnb_menu {
+    display: block;
+    width: 100%;
+    float: left;
+    height: 40px;
+    background-color: purple;
+  }
+
+  .lnb_menu li {
+    width: 25%;
+    line-height: 40px;
+    float: left;
+    text-align: center;
+  }
+
+  .lnb_menu a li {
+    color: white;
+  }
+
+
+  .notice_box .notice div p {
+    color: black;
+    font-weight: bold;
+    width: 55%;
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .notice_box .notice div span {
+    font-size: 13px;
+  }
+
+  .profile>div:nth-child(1) {
+    width: 50%;
+  }
+
+  .profile>div:nth-child(1) {
+    width: 100%;
+  }
+
+  .profile .birth p {}
+
+  .profile .birth div img {}
+
+  .gallery_box .gallery>div img {
+    width: calc(100% / 8);
+  }
+
+  .gallery_box .gallery>div img:hover {
+    width: 50%;
+    height: 50%;
+  }
+
+  .album div img {
+    width: 10%;
+  }
+
+  .footer_outer {
+    width: 9%;
+    position: fixed;
+    top: 20px;
+    right: 0;
+    opacity: 0.5;
+  }
+
+  .footer_outer .footer .sns a {
+    padding-left: 5px;
+  }
+
+  .footer_outer .footer .sns span {
+    display: none;
+  }
+}
